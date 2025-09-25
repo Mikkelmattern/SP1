@@ -9,7 +9,7 @@ class Country {
     flag = loadImage(flagFile);
   }
 
-  //Laver landet
+  //Laver landet i en metode
   void drawCountry(int x, int y, int w, int h) {
     // Laver hvid box
     noStroke();
@@ -26,7 +26,7 @@ class Country {
     fillGroupColour();
     noStroke();
     rect(x+w, y, 10, h);
-    // Sætter flaget ind, hvis der er et
+      // Sætter flaget ind, hvis der er et
     if(flag != null){
       image(flag, x, y, w/5, h);}
   }
